@@ -1,8 +1,8 @@
-create DATABASE giftogram_assessment;
+create DATABASE IF NOT EXISTS giftogram_assessment;
 
 USE giftogram_assessment;
 
-CREATE TABLE users (
+CREATE TABLE IF NOT EXISTS users (
 	user_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     email VARCHAR(255) NOT NULL UNIQUE,
     user_password VARCHAR(255) NOT NULL,
@@ -10,7 +10,7 @@ CREATE TABLE users (
     last_name VARCHAR(100) NOT NULL
 );
 
-CREATE TABLE messages (
+CREATE TABLE IF NOT EXISTS messages (
 	message_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     sender_user_id INT UNSIGNED NOT NULL,
     receiver_user_id INT UNSIGNED NOT NULL,
