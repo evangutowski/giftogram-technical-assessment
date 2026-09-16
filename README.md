@@ -13,7 +13,7 @@ I decided to use an existing framework rather than building the HTTP server from
 
 I planned the database structure before implementing the endpoints. I created a `users` table to store account information and a `messages` table to store messages between users. I used primary and foreign keys to establish relationships between the tables while also using a unique constraint to prevent duplicate email addresses from being used. I used MySQL Workbench for database creation, inspection, resetting, and verifying that tables were implemented properly. 
 
-When it came to implementation of the backend, I started by getting the express server running. After that, I implemented each required endpoint one by one. In between adding the endpoint requirements, I tested each endpoint using the REST Client extension in VS Code with an HTTP file. This allowed me to perform integrationing test my code, while also verifying successful requests and expected errors.
+When it came to implementation of the backend, I started by getting the express server running. After that, I implemented each required endpoint one by one. In between adding the endpoint requirements, I tested each endpoint using the REST Client extension in VS Code with an HTTP file. This allowed me to integration test my code, while also verifying successful requests and expected errors.
 
 ## Issues With the Endpoints
 No major issues were encountered during testing. All required endpoints were tested successfully, including both successful requests and expected errors.
@@ -41,4 +41,4 @@ No major issues were encountered during testing. All required endpoints were tes
 - Add API versioning, such as `/api/v1`.
 - Use middleware for request validation and authentication.
 - Add automated unit and integration tests.
-- Add API documentation,.
+- Add API documentation.
